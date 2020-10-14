@@ -1,0 +1,29 @@
+{
+  "name": "Foods",
+  "version": "1.0.0",
+  "description": "Some powerful sites",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "npm run docs:dev",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brizer/awesome-url.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brizer/awesome-url/issues"
+  },
+  "homepage": "https://github.com/brizer/awesome-url#readme",
+  "devDependencies": {
+    "vuepress": "^1.2.0"
+  }
+}
