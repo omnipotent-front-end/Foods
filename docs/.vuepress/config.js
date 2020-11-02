@@ -16,6 +16,7 @@ module.exports = {
               "/food/juice.md",
               "/food/meat.md",
               "/food/nut.md",
+              "/food/vegetable.md",
             ]
           }
         ]
