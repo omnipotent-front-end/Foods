@@ -17,7 +17,7 @@ module.exports = {
               "/food/meat.md",
               "/food/nut.md",
               "/food/vegetable/leafy.md",
-              "/food/vegetable/ginger-shallot.md",
+              "/food/vegetable/garlic.md",
             ]
           }
         ]
