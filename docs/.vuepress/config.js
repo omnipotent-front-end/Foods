@@ -13,7 +13,6 @@ module.exports = {
             children: [
               "/food/juice.md",
               "/food/meat.md",
-              "/food/nut.md",
               "/food/vegetable/leafy.md",
               "/food/vegetable/rootstock.md",
               "/food/vegetable/melon.md",
@@ -32,6 +31,8 @@ module.exports = {
               "/food/fishery/cowry.md",
               "/food/fishery/other.md",
               "/food/fishery/alga.md",
+              "/food/fruit/fruit.md",
+              "/food/fruit/nut.md",
             ]
           }
         ]
