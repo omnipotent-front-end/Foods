@@ -31,6 +31,7 @@ module.exports = {
               "/food/fishery/crab.md",
               "/food/fishery/cowry.md",
               "/food/fishery/other.md",
+              "/food/fishery/alga.md",
             ]
           }
         ]
