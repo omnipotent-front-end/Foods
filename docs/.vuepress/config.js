@@ -22,6 +22,7 @@ module.exports = {
               "/food/vegetable/melon.md",
               "/food/vegetable/mushroom.md",
               "/food/vegetable/stem_leave_flower.md",
+              "/food/vegetable/bean.md",
             ]
           }
         ]

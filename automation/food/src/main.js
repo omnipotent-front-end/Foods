@@ -8,10 +8,11 @@ const { getFoodDetailByUrl } = require('./util/index.js')
 const DOCS_FOOD_FOLDER = '../../docs/food/'
 const URL = 'http://www.1qibi.com/food/food_index.php' // 网页链接
 const DOMAIN_FOOD = 'http://www.1qibi.com/food/' // 域名
-const GROUP_TABLE_SEL = '#food_list_left > table:nth-child(11) td' // 一个分类的表格
-const GROUP_TITLE_SEL = '#food_list_left > table:nth-child(11) > tbody > tr > td:nth-child(1)' // 一个分类的标题
-const GROUP_CONTENT_SEL = '#food_list_left > table:nth-child(11) > tbody > tr > td:nth-child(2) > table td' // 一个分类的内容列表
-const DOC_TITLE = `${DOCS_FOOD_FOLDER}vegetable/melon.md` // 该分类文档的标题
+const GROUP_TABLE_SEL = '#food_list_left > table:nth-child(14) td' // 一个分类的表格
+const GROUP_TITLE_SEL = '#food_list_left > table:nth-child(14) > tbody > tr > td:nth-child(1)' // 一个分类的标题
+const GROUP_CONTENT_SEL = '#food_list_left > table:nth-child(14) > tbody > tr > td:nth-child(2) > table td' // 一个分类的内容列表
+const DOC_TITLE = `${DOCS_FOOD_FOLDER}vegetable/bean.md` // 该分类文档的标题
+const GROUP_TITLE_PREFIX = `蔬菜/` // 类别前缀
 
 function getAbsoluteLinks(element) {
     return DOMAIN_FOOD + element.find('a')
@@ -43,7 +44,7 @@ function getContentLinks(elements) {
  */
 async function getDocContent(groupTitle, groupContentLinks) {
     try {
-        let str = `# ${groupTitle}\n\n`
+        let str = `# ${GROUP_TITLE_PREFIX}${groupTitle}\n\n`
         for (const [mytext, mylink] of groupContentLinks) {
             try {
                 const content = await getFoodDetailByUrl(mylink)
