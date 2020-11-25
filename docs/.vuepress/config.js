@@ -11,7 +11,6 @@ module.exports = {
           {
             title: "食物",
             children: [
-              "/food/egg.md",
               "/food/juice.md",
               "/food/meat.md",
               "/food/nut.md",
@@ -25,6 +24,7 @@ module.exports = {
               "/food/vegetable/garlic.md",
               "/food/bean/bean.md",
               "/food/bean/bean_product.md",
+              "/food/egg/egg.md",
             ]
           }
         ]
