@@ -11,19 +11,19 @@ module.exports = {
           {
             title: "食物",
             children: [
-              "/food/beans.md",
               "/food/egg.md",
               "/food/juice.md",
               "/food/meat.md",
               "/food/nut.md",
               "/food/vegetable/leafy.md",
-              "/food/vegetable/garlic.md",
               "/food/vegetable/rootstock.md",
               "/food/vegetable/melon.md",
               "/food/vegetable/mushroom.md",
               "/food/vegetable/stem_leave_flower.md",
               "/food/vegetable/bean.md",
               "/food/vegetable/wild.md",
+              "/food/vegetable/garlic.md",
+              "/food/bean/bean.md",
             ]
           }
         ]
