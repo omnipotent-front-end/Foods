@@ -25,6 +25,7 @@ module.exports = {
               "/food/bean/bean.md",
               "/food/bean/bean_product.md",
               "/food/egg/egg.md",
+              "/food/egg/milk.md",
             ]
           }
         ]
