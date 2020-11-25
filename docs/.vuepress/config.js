@@ -24,6 +24,7 @@ module.exports = {
               "/food/vegetable/wild.md",
               "/food/vegetable/garlic.md",
               "/food/bean/bean.md",
+              "/food/bean/bean_product.md",
             ]
           }
         ]
