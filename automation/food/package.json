@@ -1,0 +1,17 @@
+{
+  "name": "food",
+  "version": "1.0.0",
+  "description": "将菜菜数据整合成Markdown文档",
+  "main": "src/main.js",
+  "scripts": {
+    "serve": "node src/main.js",
+    "serve:util": "node src/util/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tyuqing",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "cheerio": "^1.0.0-rc.3"
+  }
+}
