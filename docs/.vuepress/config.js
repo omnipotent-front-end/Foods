@@ -20,6 +20,8 @@ module.exports = {
               "/food/vegetable/garlic.md",
               "/food/vegetable/rootstock.md",
               "/food/vegetable/melon.md",
+              "/food/vegetable/mushroom.md",
+              "/food/vegetable/stem_leave_flower.md",
             ]
           }
         ]
