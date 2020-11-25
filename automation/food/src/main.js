@@ -5,12 +5,13 @@ const $ = cheerio.load('')
 const { getFoodDetailByUrl } = require('./util/index.js')
 
 // 常量
+const DOCS_FOOD_FOLDER = '../../docs/food/'
 const URL = 'http://www.1qibi.com/food/food_index.php' // 网页链接
 const DOMAIN_FOOD = 'http://www.1qibi.com/food/' // 域名
-const GROUP_TABLE_SEL = '#food_list_left > table:nth-child(10) td' // 一个分类的表格
-const GROUP_TITLE_SEL = '#food_list_left > table:nth-child(10) > tbody > tr > td:nth-child(1)' // 一个分类的标题
-const GROUP_CONTENT_SEL = '#food_list_left > table:nth-child(10) > tbody > tr > td:nth-child(2) > table td' // 一个分类的内容列表
-const DOC_TITLE = 'rootstock.md' // 该分类文档的标题
+const GROUP_TABLE_SEL = '#food_list_left > table:nth-child(11) td' // 一个分类的表格
+const GROUP_TITLE_SEL = '#food_list_left > table:nth-child(11) > tbody > tr > td:nth-child(1)' // 一个分类的标题
+const GROUP_CONTENT_SEL = '#food_list_left > table:nth-child(11) > tbody > tr > td:nth-child(2) > table td' // 一个分类的内容列表
+const DOC_TITLE = `${DOCS_FOOD_FOLDER}vegetable/melon.md` // 该分类文档的标题
 
 function getAbsoluteLinks(element) {
     return DOMAIN_FOOD + element.find('a')
@@ -78,10 +79,16 @@ async function main(value) {
     // 转成文档
     const str = await getDocContent(groupTitle, groupContentLinks)
     // 写文档
-    fs.writeFile(DOC_TITLE, str, (err) => {
-        if (err) throw err;
+    try {
+        console.log(str);
+        const fo = fs.createWriteStream(DOC_TITLE)
+        fo.write(str)
+        fo.close()
+        console.log(str);
         console.log('文件已被保存');
-    })
+    } catch (error) {
+        throw error;
+    }
 }
 
 const food = require('./example/food.js')
