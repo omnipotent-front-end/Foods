@@ -33,6 +33,9 @@ module.exports = {
               "/food/fishery/alga.md",
               "/food/fruit/fruit.md",
               "/food/fruit/nut.md",
+              "/food/crop/flour.md",
+              "/food/crop/cereal.md",
+              "/food/crop/other.md",
             ]
           }
         ]
