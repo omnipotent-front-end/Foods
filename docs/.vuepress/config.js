@@ -18,6 +18,7 @@ module.exports = {
               "/food/nut.md",
               "/food/vegetable/leafy.md",
               "/food/vegetable/garlic.md",
+              "/food/vegetable/rootstock.md",
             ]
           }
         ]
