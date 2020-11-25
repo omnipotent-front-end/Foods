@@ -29,6 +29,7 @@ module.exports = {
               "/food/fishery/freshwater.md",
               "/food/fishery/shrimp.md",
               "/food/fishery/crab.md",
+              "/food/fishery/cowry.md",
             ]
           }
         ]
