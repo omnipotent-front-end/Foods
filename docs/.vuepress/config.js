@@ -28,6 +28,7 @@ module.exports = {
               "/food/egg/milk.md",
               "/food/fishery/freshwater.md",
               "/food/fishery/shrimp.md",
+              "/food/fishery/crab.md",
             ]
           }
         ]
