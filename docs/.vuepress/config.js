@@ -12,7 +12,12 @@ module.exports = {
             title: "食物",
             children: [
               "/food/juice.md",
-              "/food/meat.md",
+              "/food/meat/pork.md",
+              "/food/meat/beef.md",
+              "/food/meat/mutton.md",
+              "/food/meat/chicken.md",
+              "/food/meat/duck.md",
+              "/food/meat/other.md",
               "/food/vegetable/leafy.md",
               "/food/vegetable/rootstock.md",
               "/food/vegetable/melon.md",
