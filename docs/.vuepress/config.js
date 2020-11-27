@@ -42,6 +42,12 @@ module.exports = {
               "/food/crop/cereal.md",
               "/food/crop/other.md",
             ]
+          },
+          {
+            title: '药食',
+            children: [
+              "/food/herb/herb.md"
+            ]
           }
         ]
       }
