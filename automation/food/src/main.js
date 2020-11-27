@@ -82,10 +82,7 @@ async function main(value) {
     // 写文档
     try {
         console.log(str);
-        const fo = fs.createWriteStream(DOC_TITLE)
-        fo.write(str)
-        fo.close()
-        console.log(str);
+        await fs.promises.writeFile(DOC_TITLE, str)
         console.log('文件已被保存');
     } catch (error) {
         throw error;
