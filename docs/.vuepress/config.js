@@ -48,6 +48,12 @@ module.exports = {
             children: [
               "/food/herb/herb.md"
             ]
+          },
+          {
+            title: '检查指标',
+            children: [
+              "/check/blood.md"
+            ]
           }
         ]
       }
